@@ -27,9 +27,15 @@ void print_list() {
 
 void main() {
 	Head = NULL;
-	for (int i = 0; i < 8; i++)
+
+	int data_number;
+	cout << "전체 입력 데이터의 개수는? : ";
+	cin >> data_number;
+
+
+	for (int i = 0; i < data_number; i++)
 	{
-		//새로운 8개의 데이터를 차례대로 입력받음
+		//새로운 데이터를 차례대로 입력받음
 		int i_data;
 		cout << "새로운 값을 입력하시오  (#" << i + 1 << "):  ";
 		cin >> i_data;
