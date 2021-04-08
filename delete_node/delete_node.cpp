@@ -15,7 +15,7 @@ void insert_node_at_front(Node* head, Node* new_node)
 	Head = new_node;
 }
 void delete_node(int x) {//x값을 가는 노드를 연결리스트에서 삭제
-	Node* list = Head;
+	Node* list = Head;    //list==>pre로 고쳐서 코드를 작성해도 됨
 
 	if (Head == NULL)  return; 	// 삭제할 것이 없음
 	else if (Head->data == x) 	// 찾는 노드(삭제 노드)가 첫 노드인 경우 
@@ -50,10 +50,12 @@ void print_list() {
 void main() {
 	Head = NULL;
 
+	//연결 리스트 구성
 	int data_number;
 	cout << "전체 입력 데이터의 개수는? : ";
 	cin >> data_number;
 
+	//연결 리스트에서 노드 삭제 반복
 
 	for (int i = 0; i < data_number; i++)
 	{
